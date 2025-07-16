@@ -6,7 +6,7 @@ resource "aws_instance" "name" {
     tags = {
       Name ="dev"
     }
-  
-
-  
+  }
+resource "aws_s3_bucket" "name" {
+  bucket = var.bucket
 }
